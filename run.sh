@@ -6,8 +6,7 @@
 # - start this container wit the local work directory mounted
 
 # This needs to be something totally random
-# Can we use a GO env variable for this?
-RANDOM_CONTAINERNAME=$GO_REVISION
+RANDOM_CONTAINERNAME=${GO_REVISION:-namespace/tmpcontainer}
 
 # 1. Create image
 docker build -t $RANDOM_CONTAINERNAME .
