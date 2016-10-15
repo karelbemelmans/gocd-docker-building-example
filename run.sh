@@ -17,4 +17,6 @@ docker run --rm \
   -v $(pwd)/output:/output \
   $RANDOM_CONTAINERNAME
 
+echo "Output:"
+ls -al output/
 cat output/*

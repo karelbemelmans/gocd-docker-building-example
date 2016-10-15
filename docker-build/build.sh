@@ -2,4 +2,7 @@
 #
 # This script contains the actual build process for your plan.
 
-cat /src/input.txt | sed -e 's/o/O/g' > /output/output.txt
+cat /src/input.txt  > /output/output.txt
+echo '-- GoAgent was here.' >> /output/output.txt
+
+env > /output/env.txt
