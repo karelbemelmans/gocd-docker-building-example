@@ -16,3 +16,5 @@ docker run --rm \
   -v $(pwd)/src:/src \
   -v $(pwd)/output:/output \
   $RANDOM_CONTAINERNAME
+
+cat output/*
