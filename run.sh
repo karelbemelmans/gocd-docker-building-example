@@ -7,7 +7,7 @@
 
 # This needs to be something totally random
 # Can we use a GO env variable for this?
-RANDOM_CONTAINERNAME=namespace/fixme
+RANDOM_CONTAINERNAME=$GO_REVISION
 
 # 1. Create image
 docker build -t $RANDOM_CONTAINERNAME .
