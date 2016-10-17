@@ -2,4 +2,4 @@
 #
 # This script contains the actual build process for your plan.
 
-which mvn
+whereis mvn
