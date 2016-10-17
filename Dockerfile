@@ -1,4 +1,5 @@
-FROM karelbemelmans/pipelines-hugo
+# FROM karelbemelmans/pipelines-hugo
+FROM unibet/docker-centos-example-builder
 MAINTAINER mail@karelbemelmans.com
 
 COPY ./docker-build/build.sh /build.sh
