@@ -10,7 +10,7 @@
 
 # This will be the name of the resulting Docker image
 # This values could come from the GoCD environment
-IMAGE=unibet/test-deployment-container
+IMAGE=unibet/example-image
 TAG=latest
 
 # 1. Build the production container.
