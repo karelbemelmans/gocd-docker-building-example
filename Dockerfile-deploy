@@ -1,0 +1,4 @@
+FROM unibet/base-centos-java8
+MAINTAINER karel.bemelmans@unibet.com
+
+COPY output/output.txt .

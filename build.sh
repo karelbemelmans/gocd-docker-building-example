@@ -9,7 +9,7 @@
 RANDOM_CONTAINERNAME=${GO_REVISION:-namespace/tmpcontainer}
 
 # 1. Create image
-docker build -t $RANDOM_CONTAINERNAME .
+docker build -t $RANDOM_CONTAINERNAME -f Dockerfile-build .
 
 # 2. Run container
 docker run --rm \

@@ -2,9 +2,9 @@
 FROM unibet/docker-centos-example-builder
 MAINTAINER mail@karelbemelmans.com
 
-COPY ./docker-build/build.sh /build.sh
+COPY ./docker-build/run.sh /run.sh
 
 VOLUME /src /output
 
 WORKDIR /src
-CMD ["/build.sh"]
+CMD ["/run.sh"]

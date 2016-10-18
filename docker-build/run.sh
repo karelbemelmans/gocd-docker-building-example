@@ -5,6 +5,5 @@
 # Clean the output directory
 rm -rf /output/*
 
-whereis mvn
-
-echo "Build finished!" >> /output/output.txt
+# Generate a file in the output directory
+echo "This is a successful build!" >> /output/output.txt
