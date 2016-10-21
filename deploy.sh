@@ -10,8 +10,8 @@
 
 # This will be the name of the resulting Docker image
 # This values could come from the GoCD environment
-IMAGE=unibet/example-image
-TAG=latest
+IMAGE=${ECR_IMAGE_NAME:-unibet/example-image}
+TAG=${ECR_TAG_NAME:-latest}
 
 # 1. Build the production container.
 docker build -t $IMAGE:$TAG -f Dockerfile-deploy .
