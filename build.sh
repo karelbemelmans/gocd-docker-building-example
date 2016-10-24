@@ -13,11 +13,11 @@ SCRIPTS_CONTAINER=$AWS_ECR_LOCATION/unibet/pipeline-go-scripts:latest
 docker build -t $RANDOM_CONTAINER_NAME -f Dockerfile-build .
 
 # 2. Create a container for the scripts image
-docker create -v /opt --name pipeline-go-scripts-container $SCRIPTS_CONTAINER
+docker run --name pipeline-go-scripts-container $SCRIPTS_CONTAINER echo 'Data-only container for pipeline-go-scripts'
 
 # 2. Run container, link it with the scripts container
 docker run --rm \
   -v $(pwd)/src:/src \
   -v $(pwd)/output:/output \
-  -v-volumes-from pipeline-go-scripts-container \
+  -volumes-from pipeline-go-scripts-container \
   $RANDOM_CONTAINER_NAME

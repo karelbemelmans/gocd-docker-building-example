@@ -1,4 +1,3 @@
-# FROM karelbemelmans/pipelines-hugo
 FROM unibet/docker-centos-example-builder
 MAINTAINER mail@karelbemelmans.com
 
