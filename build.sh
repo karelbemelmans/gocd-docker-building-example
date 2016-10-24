@@ -9,6 +9,9 @@
 RANDOM_CONTAINER_NAME=${GO_REVISION:-namespace/tmpcontainer}
 SCRIPTS_CONTAINER=$AWS_ECR_LOCATION/unibet/pipeline-go-scripts:latest
 
+# 0. Make sure our scripts contain is up to date
+docker pull $SCRIPTS_CONTAINER
+
 # 1. Create image
 docker build -t $RANDOM_CONTAINER_NAME -f Dockerfile-build .
 
